@@ -1,0 +1,30 @@
+{
+  "name": "slacker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "lint": "standard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "client/node_modules",
+      "server/node_modules"
+    ]
+  },
+  "boilerplate": {
+    "name": "slacker",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Michael Sweeney <jfmike@gmail.com> (https://github.com/overthemike)",
+    "license": "ISC"
+  },
+  "devDependencies": {},
+  "description": ""
+}
