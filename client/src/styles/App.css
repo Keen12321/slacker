@@ -1,0 +1,62 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+#root {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.mainContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.chatContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.messageContainer {
+	height: 400px;
+	width: 100%;
+	font-size: 22px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.message {
+	margin: 10px 0;
+	word-wrap: break-word;
+}
+
+.inputContainer {
+	height: 45px;
+	width: 100%;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.inputBox {
+	height: 100%;
+	width: 75%;
+	border: 1px solid black;
+	outline: none;
+	padding: 0 10px;
+}
+
+.inputSubmit {
+	height: 100%;
+	width: 25%;
+	outline: none;
+	border: 1px solid black;
+}
+
+.inputSubmit::active {
+	background: #333;
+}
