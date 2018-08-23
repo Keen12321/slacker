@@ -1,6 +1,21 @@
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
 
+body {
+	background: url(https://i.pinimg.com/originals/3e/fb/6a/3efb6ab7f4c2c45cc8d5d8a7b46f5877.jpg);
+	font-family: sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+@font-face {
+font-family: "Carnevalee Freakshow";
+src: url('CarnevaleeFreakshow.ttf') format('woff');
+}
+
 #root {
 	display: flex;
 	justify-content: center;
@@ -9,54 +24,136 @@ html {box-sizing: border-box;}
 }
 
 .mainContainer {
+	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+.loginMainContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 35%;
+}
+
+.nameTitle {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	font-size: 150px;
+	font-weight: bold;
+	font-family: 'Carnevalee Freakshow', sans-serif;
+}
+
+.inputField {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.inputBox {
+	height: 40px;
 	width: 100%;
+	outline: none;
+	padding: 0 10px;
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
+.loginSubmit {
+	margin-top: 20px;
+	width: 100%;
+	height: 35px;
+	outline: none;
+	border: 1px solid black;
+	background: rgb(128 0 32);
+	color: white;
+}
+
+.loginRegisterLink {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+.chatMainContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.logoutButton {
+	height: 30px;
+	background: rgb(128 0 32);
+	color: white;
+	outline: none;
+	border: 1px solid black;
+}
+
+.changeRoom {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	margin-right: 25px;
+	width: 10%;
+}
+
+.chatRoomLink {
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(128 0 32);
+
 }
 
 .chatContainer {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-direction: column;
 	width: 50%;
+	margin-top: 100px;
 }
 
 .messageContainer {
-	height: 400px;
+	height: 550px;
 	width: 100%;
+	padding: 10px;
 	font-size: 22px;
 	overflow-y: scroll;
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
+	border: 1px solid black;
+	background: url(https://norbertinecommunity.org/wp-content/uploads/2016/11/Content-Background-Repeat.png);
 }
 
 .message {
-	margin: 10px 0;
+	margin: 10px 10px;
 	word-wrap: break-word;
 }
 
 .inputContainer {
-	height: 45px;
 	width: 100%;
 	font-size: 22px;
 	margin-top: 10px;
 }
 
-.inputBox {
-	height: 100%;
-	width: 75%;
-	border: 1px solid black;
-	outline: none;
-	padding: 0 10px;
-}
-
-.inputSubmit {
-	height: 100%;
-	width: 25%;
+.emojiButton {
+	width: 10%;
+	height: 40px;
 	outline: none;
 	border: 1px solid black;
 }
 
-.inputSubmit::active {
-	background: #333;
+.messageBox {
+	width: 70%;
+	height: 40px;
+}
+
+.messageSubmit {
+	width: 20%;
+	height: 40px;
+	background: rgb(128 0 32);
+	color: white;
+	outline: none;
+	border: 1px solid black;
 }
